@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Mystore</div>
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Products</a>
+    <a href="#" class="nav-link">Orders</a>
+    <div class="search-and-cart">
+      <div class="search-bar">
+        <input type="text" placeholder="search products...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <button class="cart-btn" id="view-cart">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <div class="product-container">
+    <!-- Example product -->
+    <div class="product-card">
+      <img src="Refrigerator.jpg" alt="Refrigerator" class="product-image">
+      <h2 class="product-title">Refrigerator</h2>
+      <p class="product-description">storing the cooking items and vegatables.</p>
+      <p class="product-price">50000.00</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+
+      <!-- Review Section -->
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <ul class="review-list"></ul>
+        <textarea class="review-input" placeholder="Write a review..."></textarea>
+        <button class="add-review-btn">Submit Review</button>
+      </div>
+    </div>
+
+    <!-- Duplicate the above structure for each product -->
+    <!-- Example 2 -->
+    <div class="product-card">
+      <img src="Headphone.jpg" alt="Headphone" class="product-image">
+      <h2 class="product-title">Noise-Canceling Headphones</h2>
+      <p class="product-description">Immerse yourself in music with crystal-clear audio and superior noise-cancellation.</p>
+      <p class="product-price">849.50</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <ul class="review-list"></ul>
+        <textarea class="review-input" placeholder="Write a review..."></textarea>
+        <button class="add-review-btn">Submit Review</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="Smart watch.jpg" alt="Smart Watch" class="product-image">
+      <h2 class="product-title">Smart Watch</h2>
+      <p class="product-description">choosing the time </p>
+      <p class="product-price">500.50</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <ul class="review-list"></ul>
+        <textarea class="review-input" placeholder="Write a review..."></textarea>
+        <button class="add-review-btn">Submit Review</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="Makeup.jpg" alt="Makeup" class="product-image">
+      <h2 class="product-title">Makeup</h2>
+      <p class="product-description">It is a cosmatics,is a broad category of substances and products used to enhance the appearance of the human face and body.</p>
+      <p class="product-price">500.00</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <ul class="review-list"></ul>
+        <textarea class="review-input" placeholder="Write a review..."></textarea>
+        <button class="add-review-btn">Submit Review</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="Smartphone.jpg" alt="Smartphone" class="product-image">
+      <h2 class="product-title">Latest 5G Smartphone</h2>
+      <p class="product-description">Experience lightning-fast performance, a brilliant display,and a powerful camera system.</p>
+      <p class="product-price">10899.50</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <ul class="review-list"></ul>
+        <textarea class="review-input" placeholder="Write a review..."></textarea>
+        <button class="add-review-btn">Submit Review</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="Bangles.jpg" alt="Bangles" class="product-image">
+      <h2 class="product-title">Bangles</h2>
+      <p class="product-description">Women to be  loved more to use this product.</p>
+      <p class="product-price">300.00</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <ul class="review-list"></ul>
+        <textarea class="review-input" placeholder="Write a review..."></textarea>
+        <button class="add-review-btn">Submit Review</button>
+      </div>
+      </div>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-content">
+      <h2>Your Order</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: $<span id="cart-total">0.00</span></strong></p>
+      <button id="place order">place order</button>
+      <button id="close-cart">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
